@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Merienda&family=Padauk&family=Source+Code+Pro&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*-----NAV----*/
+.homeButton a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  color: #e669c0;
+  font-family: "Padauk", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.homeButton a:visited {
+  color: #e669c0;
+  background-color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.homeButton a:active {
+  color: black;
+  background-color: #e669c0;
+  border-bottom: 5px #2c3588 solid;
+  transition-duration: all 30s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.homeButton a:hover {
+  color: #e669c0;
+  background-color: black;
+  border-bottom: 5px #343e94 solid;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*----HOMEPAGE FONTS----*/
+.P1 {
+  font-family: "Source Code Pro", monospace;
+}
+
+.P2 {
+  font-family: "Padauk", sans-serif;
 }
