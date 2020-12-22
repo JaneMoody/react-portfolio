@@ -5,6 +5,7 @@ import Footer from "../Components/Footer";
 import Dev from "../Components/dev.jpg";
 import Designer from "../Components/purpleDesigner.jpg";
 import "../App.css";
+
 const Wrapper = styled.div`
   margin-top: 0%;
   padding: 0%;
@@ -50,7 +51,7 @@ export default function Home() {
   return (
     <Wrapper>
       <Container>
-        <div>
+        <div style={{ height: "100vh" }}>
           <Nav />
           <Div>
             <div>
@@ -62,8 +63,8 @@ export default function Home() {
               <P2 className="P2">Creative Designer</P2>
             </div>
           </Div>
+          <Footer />
         </div>
-        <Footer />
       </Container>
     </Wrapper>
   );

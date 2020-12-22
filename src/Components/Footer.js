@@ -17,12 +17,12 @@ const Wrapper = styled.div`
 const Container = styled.div`
   align-items: center;
   width: 100%;
-  height: 5rem;
+  height: 3.5rem;
 `;
 
 const Socials = styled.div`
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto;
   list-style-type: none;
   align-items: center;
   height: 3rem;
@@ -36,7 +36,7 @@ const Image = styled.img`
 const H1 = styled.h1`
   font-size: 1.3rem;
   color: #e669c0;
-  text-align: center;
+  text-align: left;
 `;
 
 export default function Nav() {
@@ -45,15 +45,20 @@ export default function Nav() {
       <Container>
         <Socials>
           <H1>&copy; Jane Moody 2020</H1>
-          <a href="https://github.com/JaneMoody">
-            <Image src={github} />
-          </a>
-          <a href="https://www.behance.net/janeEmoody">
-            <Image src={behance} />
-          </a>
-          <a href="https://www.linkedin.com/in/jane-moody-792750b9/">
-            <Image src={linkedin} style={{ width: "2rem" }} />
-          </a>
+          <div>
+            <a href="https://github.com/JaneMoody">
+              <Image src={github} />
+            </a>
+            <a href="https://www.behance.net/janeEmoody">
+              <Image src={behance} />
+            </a>
+            <a href="https://www.linkedin.com/in/jane-moody-792750b9/">
+              <Image
+                src={linkedin}
+                style={{ width: "2rem", marginBottom: "10px" }}
+              />
+            </a>
+          </div>
         </Socials>
       </Container>
     </Wrapper>

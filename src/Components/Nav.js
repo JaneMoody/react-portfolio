@@ -46,7 +46,7 @@ const Li = styled.li`
   font-size: 1rem;
   list-style-type: none;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 45px;
 `;
 
 export default function Nav() {
