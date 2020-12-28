@@ -15,13 +15,6 @@ const Wrapper = styled.div`
   height: 100vh;
 `;
 
-const Container = styled.div`
-  width: 100%;
-  display: grid;
-  align-items: center;
-  background-color: black;
-`;
-
 const Div = styled.div`
   display: grid;
   grid-template-columns: auto auto;
@@ -50,22 +43,20 @@ const P2 = styled.p`
 export default function Home() {
   return (
     <Wrapper>
-      <Container>
-        <div style={{ height: "100vh" }}>
-          <Nav />
-          <Div>
-            <div>
-              <Image src={Dev} />
-              <P1 className="P1">Full Stack Developer</P1>
-            </div>
-            <div>
-              <Image src={Designer} />
-              <P2 className="P2">Creative Designer</P2>
-            </div>
-          </Div>
-          <Footer />
-        </div>
-      </Container>
+      <div style={{ height: "90vh" }}>
+        <Nav />
+        <Div>
+          <div>
+            <Image src={Dev} />
+            <P1 className="P1">Full Stack Developer</P1>
+          </div>
+          <div>
+            <Image src={Designer} />
+            <P2 className="P2">Creative Designer</P2>
+          </div>
+        </Div>
+      </div>
+      <Footer />
     </Wrapper>
   );
 }

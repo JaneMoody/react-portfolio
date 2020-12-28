@@ -28,7 +28,6 @@ const Image = styled.img`
   width: 4rem;
   margin-left: 30px;
   margin-top: 6px;
-  border: 2px white solid;
 `;
 
 const Div = styled.div`

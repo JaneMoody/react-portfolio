@@ -25,7 +25,7 @@ const H1 = styled.h1`
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   padding: 4%;
-  margin-top: 1%;
+  margin-top: 5%;
 `;
 
 const P = styled.p`

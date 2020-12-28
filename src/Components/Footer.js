@@ -9,24 +9,11 @@ const Wrapper = styled.div`
   box-sizing: border-box;
   width: 100%;
   height: 3.5rem;
-  background-color: #1b1a1a;
+  background-color: black;
   padding: 0%;
   margin: 0%;
-`;
-
-const Container = styled.div`
-  align-items: center;
-  width: 100%;
-  height: 3.5rem;
-`;
-
-const Socials = styled.div`
   display: grid;
   grid-template-columns: auto auto;
-  list-style-type: none;
-  align-items: center;
-  height: 3rem;
-  width: 100%;
 `;
 
 const Image = styled.img`
@@ -39,28 +26,26 @@ const H1 = styled.h1`
   text-align: left;
 `;
 
+const Div = styled.div`
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: baseline;
+`;
 export default function Nav() {
   return (
     <Wrapper>
-      <Container>
-        <Socials>
-          <H1>&copy; Jane Moody 2020</H1>
-          <div>
-            <a href="https://github.com/JaneMoody">
-              <Image src={github} />
-            </a>
-            <a href="https://www.behance.net/janeEmoody">
-              <Image src={behance} />
-            </a>
-            <a href="https://www.linkedin.com/in/jane-moody-792750b9/">
-              <Image
-                src={linkedin}
-                style={{ width: "2rem", marginBottom: "10px" }}
-              />
-            </a>
-          </div>
-        </Socials>
-      </Container>
+      <H1>&copy; Jane Moody 2020</H1>
+      <Div>
+        <a href="https://github.com/JaneMoody">
+          <Image src={github} />
+        </a>
+        <a href="https://www.behance.net/janeEmoody">
+          <Image src={behance} />
+        </a>
+        <a href="https://www.linkedin.com/in/jane-moody-792750b9/">
+          <Image src={linkedin} />
+        </a>
+      </Div>
     </Wrapper>
   );
 }
